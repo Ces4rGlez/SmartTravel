@@ -1,4 +1,4 @@
-# 🌍 SmartTravel - Aplicación de Planificación de Viajes
+#  SmartTravel - Aplicación de Planificación de Viajes
 
 <p align="center">
   <img src="https://img.shields.io/badge/Flask-Python-blue?style=for-the-badge&logo=flask" alt="Flask">
@@ -10,7 +10,14 @@
 
 **SmartTravel** es una aplicación web moderna de planificación de viajes que permite a los usuarios explorar destinos turísticos de todo el mundo. La aplicación proporciona información en tiempo real sobre el clima, lugares de interés turístico, hoteles, videos relacionados y un asistente virtual potenciado por inteligencia artificial.
 
+<img width="1919" height="977" alt="image" src="https://github.com/user-attachments/assets/d8c0d47a-5335-4aa4-be55-07d6e650c748" />
+
 ### ✨ Características Principales
+
+<img width="1919" height="805" alt="image" src="https://github.com/user-attachments/assets/6650f166-76e2-42b7-8209-24d2ad8baf13" />
+<img width="1918" height="1076" alt="image" src="https://github.com/user-attachments/assets/20e704ca-045a-4fa9-b283-bebe080189a6" />
+<img width="1919" height="867" alt="image" src="https://github.com/user-attachments/assets/af7dc4eb-60e6-4882-a7a0-8494faaae53d" />
+
 
 - 🔍 **Búsqueda de Destinos**: Explora cualquier ciudad o lugar del mundo
 - 🌤️ **Clima en Tiempo Real**: Consulta el clima actual y pronóstico de 14 días
@@ -21,6 +28,20 @@
 - 📱 **Diseño Responsivo**: Compatible con dispositivos móviles y escritorio
 
 ---
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/23609b9a-a944-4945-8fd5-2f52f4cfe4ca" />
+<img width="1919" height="936" alt="image" src="https://github.com/user-attachments/assets/e6f6a7fe-eed3-4079-a66d-fe9893ba7d77" />
+<img width="1918" height="896" alt="image" src="https://github.com/user-attachments/assets/77968729-86ba-45ab-b976-6da0820829cc" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/62168a27-382a-491f-96db-67bb401ed0ab" />
+<img width="1919" height="1074" alt="image" src="https://github.com/user-attachments/assets/e540e9a5-2510-468b-a90a-0efdddfb8459" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/faf46096-f140-4d25-88d9-b3904af1d604" />
+<img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/f0f2dc26-882c-410a-a297-f5eb22c7cf42" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/adadd906-df3f-43cd-b658-6bff1f79c152" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/94c2cd88-2918-4c2c-8fe4-d61a6a9ee1cf" />
+<img width="1919" height="1077" alt="image" src="https://github.com/user-attachments/assets/6ae90154-df5c-4c95-8b08-ef8d44618521" />
+<img width="1919" height="1076" alt="image" src="https://github.com/user-attachments/assets/9b6784d3-9fde-4219-8ae9-205fded15b0e" />
+
+
 
 ## 🏗️ Estructura del Proyecto
 
@@ -157,21 +178,9 @@ bash
 pip install flask flask-socketio requests
 ```
 
-### 4. Configurar Variables de Entorno (Opcional)
 
-Las API keys están configuradas en `app.py`. Para producción, se recomienda usar variables de entorno:
 
-```
-python
-import os
-
-WEATHER_API_KEY = os.environ.get('WEATHER_API_KEY', 'tu-api-key')
-GEOAPIFY_API_KEY = os.environ.get('GEOAPIFY_API_KEY', 'tu-api-key')
-YOUTUBE_API_KEY = os.environ.get('YOUTUBE_API_KEY', 'tu-api-key')
-GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', 'tu-api-key')
-```
-
-### 5. Ejecutar la Aplicación
+### 4. Ejecutar la Aplicación
 
 ```
 bash
@@ -253,6 +262,9 @@ La aplicación está diseñada para funcionar en diferentes tamaños de pantalla
 **César Fernando González Avalos**
 
 Desarrollador web apasionado por crear aplicaciones dedicadas a la planificación de viajes con información en tiempo real y de calidad.
+
+<img width="1919" height="910" alt="image" src="https://github.com/user-attachments/assets/09488914-97b9-47fe-a73a-abd8f8390ede" />
+
 
 
 
