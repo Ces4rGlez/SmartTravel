@@ -10,13 +10,15 @@
 
 **SmartTravel** es una aplicación web moderna de planificación de viajes que permite a los usuarios explorar destinos turísticos de todo el mundo. La aplicación proporciona información en tiempo real sobre el clima, lugares de interés turístico, hoteles, videos relacionados y un asistente virtual potenciado por inteligencia artificial.
 
-<img width="1919" height="977" alt="image" src="https://github.com/user-attachments/assets/d8c0d47a-5335-4aa4-be55-07d6e650c748" />
+<img width="1917" height="992" alt="image" src="https://github.com/user-attachments/assets/2e300481-afe2-40dd-835a-e4aa5fa65f9f" />
+
 
 ### ✨ Características Principales
 
 <img width="1919" height="805" alt="image" src="https://github.com/user-attachments/assets/6650f166-76e2-42b7-8209-24d2ad8baf13" />
 <img width="1918" height="1076" alt="image" src="https://github.com/user-attachments/assets/20e704ca-045a-4fa9-b283-bebe080189a6" />
-<img width="1919" height="867" alt="image" src="https://github.com/user-attachments/assets/af7dc4eb-60e6-4882-a7a0-8494faaae53d" />
+<img width="1919" height="689" alt="image" src="https://github.com/user-attachments/assets/eb995e08-12bb-4473-b72a-73c6759dc488" />
+
 
 
 - 🔍 **Búsqueda de Destinos**: Explora cualquier ciudad o lugar del mundo
