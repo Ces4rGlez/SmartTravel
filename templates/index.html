@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% block title %}Inicio - SmartTravel{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-carousel">
+        <div class="carousel-slide active" style="background-image: url('https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+        <div class="carousel-slide" style="background-image: url('https://images.pexels.com/photos/1252500/pexels-photo-1252500.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+        <div class="carousel-slide" style="background-image: url('https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">Descubre el Mundo</h1>
+        <p class="hero-subtitle">Planifica tu próximo viaje con información en tiempo real</p>
+        <a href="{{ url_for('buscar') }}" class="btn-primary">
+            <i class="fas fa-compass"></i>
+            <span>Explorar Destinos</span>
+        </a>
+    </div>
+    <div class="scroll-indicator">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <span class="scroll-text">Desplázate</span>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Funcionalidades</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-earth-americas"></i>
+                </div>
+                <h3>Buscar Destinos</h3>
+                <p>Explora destinos de todo el mundo con información detallada y actualizada</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-cloud-sun"></i>
+                </div>
+                <h3>Clima en Tiempo Real</h3>
+                <p>Consulta el clima actual y pronóstico extendido de cualquier ubicación</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-map-location-dot"></i>
+                </div>
+                <h3>Mapas Interactivos</h3>
+                <p>Navega por mapas interactivos y descubre lugares de interés turístico</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3>Videos Promocionales</h3>
+                <p>Mira videos inmersivos de los destinos que quieres visitar</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="creator-section">
+    <div class="creator-background"></div>
+    <div class="creator-container">
+        <div class="creator-content">
+            <h2 class="creator-title">Diseñado y desarrollado por <span class="creator-name">César Fernando González Avalos</span></h2>
+            <p class="creator-subtitle">Una página dedicada a la planificación de viajes, con información en tiempo real y de calidad. </p>
+            <a href="#contact" class="creator-btn">
+                <span>CONTACTAR AL CREADOR</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section class="section statistics-section">
+    <div class="container">
+        <h2 class="section-title2">Razones para Explorar el Mundo</h2>
+        <div class="stats-grid">
+
+            <div class="stat-item1">
+                <div class="stat-item1-header">
+                    <div class="stat-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Crecimiento Personal</h3>
+                </div>
+                <div class="stat-item1-divider"></div>
+                <p>Viajar expone a nuevas culturas, idiomas y formas de pensar. El 86 % de los viajeros frecuentes afirman que los viajes aumentaron su tolerancia y empatía hacia otras personas.</p>
+            </div>
+
+            <div class="stat-item1">
+                <div class="stat-item1-header">
+                    <div class="stat-icon"><i class="fas fa-heart-pulse"></i></div>
+                    <h3>Salud y Bienestar</h3>
+                </div>
+                <div class="stat-item1-divider"></div>
+                <p>Estudios demuestran que tomar vacaciones reduce el riesgo de enfermedades cardíacas hasta en un 30 %. Viajar disminuye el estrés, mejora el sueño y eleva los niveles de felicidad general.</p>
+            </div>
+
+            <div class="stat-item1">
+                <div class="stat-item1-header">
+                    <div class="stat-icon"><i class="fas fa-earth-americas"></i></div>
+                    <h3>Conexión Cultural</h3>
+                </div>
+                <div class="stat-item1-divider"></div>
+                <p>El turismo mueve más de 1.4 mil millones de personas al año por todo el mundo. Conocer otras culturas de primera mano rompe prejuicios y crea vínculos humanos duraderos.</p>
+            </div>
+
+            <div class="stat-item1">
+                <div class="stat-item-header">
+                    <div class="stat-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Creatividad e Inspiración</h3>
+                </div>
+                <div class="stat-item1-divider"></div>
+                <p>Exposición a nuevos entornos activa regiones del cerebro vinculadas a la creatividad. El 72 % de los profesionales creativos citan los viajes como su principal fuente de inspiración.</p>
+            </div>
+
+            <div class="stat-item1">
+                <div class="stat-item1-header">
+                    <div class="stat-icon"><i class="fas fa-coins"></i></div>
+                    <h3>Economía y Oportunidades</h3>
+                </div>
+                <div class="stat-item-divider"></div>
+                <p>El turismo representa el 10 % del PIB mundial y genera 1 de cada 10 empleos en el planeta. Viajar conecta personas con oportunidades de negocio y nuevas perspectivas profesionales.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.carousel-slide');
+    let currentSlide = 0;
+    
+    function nextSlide() {
+        slides.forEach(slide => slide.classList.remove('active'));
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }
+    
+    setInterval(nextSlide, 5000);
+});
+</script>
+{% endblock %}

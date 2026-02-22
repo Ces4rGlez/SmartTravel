@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% block title %}Buscar - SmartTravel{% endblock %}
+
+{% block content %}
+<div class="buscar-layout" id="buscar-layout">
+    <div class="search-header" id="search-header">
+        <h1 class="search-title">
+            <i class="fas fa-compass"></i>
+            Descubre Tu Destino
+        </h1>
+        <p class="search-subtitle">Explora destinos increíbles alrededor del mundo</p>
+
+        <form class="search-form" onsubmit="buscarDestino(event)">
+            <div class="search-input-wrapper">
+                <i class="fas fa-search search-icon"></i>
+                <input 
+                    type="text" 
+                    id="destino" 
+                    class="search-input" 
+                    placeholder="París, Tokio, Cancún, Machu Picchu..." 
+                    required
+                >
+            </div>
+            <button type="submit" class="btn-search">
+                <i class="fas fa-paper-plane"></i>
+                <span>Explorar</span>
+            </button>
+        </form>
+
+        <div class="search-suggestions">
+            <button class="suggestion-chip" onclick="buscarSugerencia('París')">
+                <i class="fas fa-landmark"></i> París
+            </button>
+            <button class="suggestion-chip" onclick="buscarSugerencia('Tokio')">
+                <i class="fas fa-torii-gate"></i> Tokio
+            </button>
+            <button class="suggestion-chip" onclick="buscarSugerencia('Nueva York')">
+                <i class="fas fa-city"></i> Nueva York
+            </button>
+            <button class="suggestion-chip" onclick="buscarSugerencia('Barcelona')">
+                <i class="fas fa-church"></i> Barcelona
+            </button>
+            <button class="suggestion-chip" onclick="buscarSugerencia('Cancún')">
+                <i class="fas fa-umbrella-beach"></i> Cancún
+            </button>
+            <button class="suggestion-chip" onclick="buscarSugerencia('Roma')">
+                <i class="fas fa-monument"></i> Roma
+            </button>
+        </div>
+    </div>
+
+    <button class="btn-toggle-search" id="btn-toggle-search" onclick="toggleSearchPanel()">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+
+    <div class="results-area" id="results-area">
+        <div id="resultados" class="search-results">
+            <div class="empty-state">
+                <i class="fas fa-map-marked-alt"></i>
+                <h2>Comienza tu búsqueda</h2>
+                <p>Ingresa un destino para descubrir información detallada, clima, lugares turísticos y más</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MAPA MODAL -->
+<div id="mapa-modal" class="mapa-modal">
+    <div class="mapa-modal-content" id="mapa-modal-content">
+        <div class="mapa-modal-header">
+            <h2 class="mapa-modal-title">
+                <i class="fas fa-map-location-dot"></i>
+                Mapa Interactivo
+            </h2>
+            <div class="mapa-modal-actions">
+                <button class="btn-mapa-action" id="btn-expand-mapa" onclick="expandirMapa()">
+                    <i class="fas fa-expand"></i>
+                    <span>Expandir</span>
+                </button>
+                <button class="btn-mapa-action" onclick="cerrarMapa()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mapa" class="leaflet-map"></div>
+    </div>
+</div>
+
+<!-- VIDEO MODAL -->
+<!-- VIDEO MODAL -->
+<div id="video-modal" class="video-modal">
+    <div class="video-modal-content">
+        <div class="video-modal-header">
+            <h2 class="video-modal-title" id="video-modal-titulo">Título del Video</h2>
+            <button class="btn-close-modal" onclick="cerrarVideoModal()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="video-modal-body">
+            <div class="video-player-container">
+                <div class="video-player" id="video-player-container"></div>
+            </div>
+            <div class="comentarios-sidebar">
+                <div class="comentarios-header">
+                    <h3><i class="fas fa-comments"></i> Comentarios</h3>
+                </div>
+                <div id="comentarios-modal-lista" class="comentarios-lista"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- CHATBOT -->
+<div id="chatbot-container" class="chatbot-container">
+    <button id="chatbot-toggle" class="chatbot-toggle">
+        <i class="fas fa-robot"></i>
+    </button>
+    <div id="chatbot-window" class="chatbot-window" style="display: none;">
+        <div class="chatbot-header">
+            <h3><i class="fas fa-robot"></i> Asistente de Viajes</h3>
+            <button id="chatbot-close" class="chatbot-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="chatbot-messages" class="chatbot-messages">
+            <div class="chat-message bot-message">
+                <div class="message-content">
+                    ¡Hola! Soy tu asistente de viajes. Pregúntame sobre destinos, clima, o recomendaciones de lugares para visitar.
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input-container">
+            <input 
+                type="text" 
+                id="chatbot-input" 
+                class="chatbot-input" 
+                placeholder="Pregunta sobre viajes..."
+            >
+            <button id="chatbot-send" class="chatbot-send">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+function buscarSugerencia(destino) {
+    document.getElementById('destino').value = destino;
+    buscarDestino({preventDefault: () => {}});
+}
+</script>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="{{ url_for('static', filename='js/buscar.js') }}"></script>
+<script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+{% endblock %}
