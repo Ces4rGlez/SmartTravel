@@ -6,14 +6,14 @@
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
 </p>
 
-## 📋 Descripción del Proyecto
+##  Descripción del Proyecto
 
 **SmartTravel** es una aplicación web moderna de planificación de viajes que permite a los usuarios explorar destinos turísticos de todo el mundo. La aplicación proporciona información en tiempo real sobre el clima, lugares de interés turístico, hoteles, videos relacionados y un asistente virtual potenciado por inteligencia artificial.
 
 <img width="1917" height="992" alt="image" src="https://github.com/user-attachments/assets/2e300481-afe2-40dd-835a-e4aa5fa65f9f" />
 
 
-### ✨ Características Principales
+###  Características Principales
 
 <img width="1919" height="805" alt="image" src="https://github.com/user-attachments/assets/6650f166-76e2-42b7-8209-24d2ad8baf13" />
 <img width="1918" height="1076" alt="image" src="https://github.com/user-attachments/assets/20e704ca-045a-4fa9-b283-bebe080189a6" />
@@ -21,13 +21,13 @@
 
 
 
-- 🔍 **Búsqueda de Destinos**: Explora cualquier ciudad o lugar del mundo
-- 🌤️ **Clima en Tiempo Real**: Consulta el clima actual y pronóstico de 14 días
-- 🗺️ **Mapas Interactivos**: Visualiza lugares turísticos y hoteles en un mapa
-- 🏨 **Búsqueda de Hoteles**: Encuentra hoteles con precios, calificación y amenidades
-- 🎥 **Videos de YouTube**: Mira videos promocionales del destino
-- 💬 **Asistente Virtual (AI)**: Chatbot potenciado por Google Gemini para recomendaciones de viaje
-- 📱 **Diseño Responsivo**: Compatible con dispositivos móviles y escritorio
+-  **Búsqueda de Destinos**: Explora cualquier ciudad o lugar del mundo
+-  **Clima en Tiempo Real**: Consulta el clima actual y pronóstico de 14 días
+-  **Mapas Interactivos**: Visualiza lugares turísticos y hoteles en un mapa
+-  **Búsqueda de Hoteles**: Encuentra hoteles con precios, calificación y amenidades
+-  **Videos de YouTube**: Mira videos promocionales del destino
+-  **Asistente Virtual (AI)**: Chatbot potenciado por Google Gemini para recomendaciones de viaje
+-  **Diseño Responsivo**: Compatible con dispositivos móviles y escritorio
 
 ---
 
@@ -47,7 +47,7 @@
 
 
 
-## 🏗️ Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 PaginaTresApi/
@@ -68,7 +68,7 @@ PaginaTresApi/
 
 ---
 
-## 🔌 APIs Utilizadas
+##  APIs Utilizadas
 
 La aplicación integra múltiples APIs para proporcionar información completa sobre los destinos:
 
@@ -127,7 +127,7 @@ La aplicación integra múltiples APIs para proporcionar información completa s
 
 ---
 
-## 🚀 Endpoints de la API
+##  Endpoints de la API
 
 ### Rutas Principales
 
@@ -148,7 +148,7 @@ La aplicación integra múltiples APIs para proporcionar información completa s
 
 ---
 
-## 💻 Instalación y Ejecución
+##  Instalación y Ejecución
 
 ### Prerrequisitos
 
@@ -195,7 +195,7 @@ La aplicación estará disponible en: `http://localhost:5000`
 
 ---
 
-## 🎨 Tecnologías y Dependencias
+##  Tecnologías y Dependencias
 
 ### Backend
 - **Flask** - Framework web ligeroask-SocketIO
@@ -219,7 +219,7 @@ La aplicación estará disponible en: `http://localhost:5000`
 
 ---
 
-## 📱 Diseño Responsivo
+##  Diseño Responsivo
 
 La aplicación está diseñada para funcionar en diferentes tamaños de pantalla:
 
@@ -231,7 +231,7 @@ La aplicación está diseñada para funcionar en diferentes tamaños de pantalla
 
 ---
 
-## 🔧 Funcionalidades del Frontend
+##  Funcionalidades del Frontend
 
 ### Página de Inicio (`index.html`)
 - Carrusel de imágenes hero
@@ -261,7 +261,7 @@ La aplicación está diseñada para funcionar en diferentes tamaños de pantalla
 
 ---
 
-## 👨‍💻 Creador
+##  Creador
 
 **César Fernando González Avalos**
 
